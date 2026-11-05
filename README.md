@@ -23,9 +23,9 @@ arguments.
 ## Requirements
 
 `plot_processing_timeline.py` (Figure 2C) uses only the Python standard
-library. `plot_figure_03.py` (Figure 3) needs the packages in
-`requirements.txt` (`pip install -r requirements.txt`), and Arial installed
-system-wide — it raises an error rather than silently substituting a
+library. `plot_figure_03.py` (Figure 3) and `plot_figure_04.py` (Figure 4)
+need the packages in `requirements.txt` (`pip install -r requirements.txt`),
+and Arial installed system-wide — each raises an error rather than silently substituting a
 different font, since that would change the figure's metrics.
 
 ## Figure 2C — processing timeline
@@ -112,9 +112,26 @@ The UMAP embedding and HDBSCAN clustering are not recomputed by this script;
 the coordinates and cluster labels in `umap_clusters_by_film.csv` are the
 ones used in the published figure.
 
-## Figure 4
+## Figure 4 - RGA library review and quantification
 
-Data and reproduction code to be added.
+```
+scripts/plot_figure_04.py
+```
+
+Residual gas analysis (RGA) of the 36 analysed films made with β-alanine tert-butyl ester hydroiodide (`CC(C)(C)OC(=O)CC[NH3+].[I-]`) and BiI₃ or SbI₃. Spectra were fitted by non-negative least squares against NIST EI reference spectra with [rgakit](https://github.com/roncofaber/rgakit). Four panels:
+
+- **A** - library construction: 634 rgakit fragments of the cation, 146 of them with a NIST spectrum, plus the environment library (16 chamber gases and hydrocarbons, 10 of them also fragments), giving 152 matched compounds; human review keeps 26.
+- **B, C** - fit of the representative film TF001993 (SbI₃ 3:1, 80 °C) before (152 compounds) and after (26 compounds) review, coloured by compound source.
+- **D** - total outgassing per film and the partial pressure of the film species in each film, one film per (metal, ratio, annealing temperature) condition.
+
+**Data**:
+- `data/fig04_rga_summary.json` - the cation (SMILES and precomputed 2D depiction coordinates, so RDKit is not needed), the number of generated fragments, and the representative run.
+- `data/fig04_rga_library.csv` - the 152 matched compounds: `compound` (NIST name), `formula`, `smiles`, `source` (`film` = cation fragment only, `environment` = environment library only, `both`), and `kept_after_review`.
+- `data/fig04_rga_runs.csv` - one row per run: `run_id`, `tf`, `batch` (RGA session), `metal`, `mixing_ratio` (organic:metal), `substrate`, `anneal_c` (annealing set temperature, °C), `outgas_area_torr_s` (background-corrected total pressure integrated over the exposure), `misfit_all` (Σ|observed − fit| / Σ observed over m/z 2-300 with the reviewed library), and `panel_d` (the lowest-misfit run per condition, shown in panel D).
+- `data/fig04_rga_fit_before_review.csv`, `data/fig04_rga_fit_after_review.csv` - for the representative run, the observed spectrum (`observed`, Torr) and each fitted compound's contribution per integer m/z (2-300).
+- `data/fig04_rga_partial_pressures.csv` - partial pressure (Torr) of each reviewed compound per run, from the fit weights scaled by ionization cross section relative to N₂.
+
+The fits are not recomputed by this script; the values in these files are the ones used in the published figure.
 
 ## License
 

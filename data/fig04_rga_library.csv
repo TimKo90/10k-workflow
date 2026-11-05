@@ -1,0 +1,153 @@
+compound,formula,smiles,source,kept_after_review
+Hydrogen,H2,[HH],both,True
+Methane,CH4,C,both,True
+Water,H2O,O,both,True
+Ammonia,H3N,N,both,True
+Ethylene,C2H4,C=C,film,True
+Ethane,C2H6,CC,film,True
+Formaldehyde,CH2O,C=O,film,False
+"Methane, iodo-",CH3I,CI,film,True
+Methyl Alcohol,CH4O,CO,film,False
+Methylamine,CH5N,CN,film,False
+Hydroxylamine,H3NO,NO,film,False
+Oxygen,O2,O=O,both,True
+Ketene,C2H2O,C=C=O,film,False
+"Ethene, iodo-",C2H3I,C=CI,film,False
+Acetaldehyde,C2H4O,CC=O,film,False
+"Ethane, iodo-",C2H5I,CCI,film,True
+Ethanol,C2H6O,CCO,film,False
+Dimethyl ether,C2H6O,COC,film,False
+Ethylamine,C2H7N,CCN,film,True
+Propene,C3H6,C=CC,both,True
+Propane,C3H8,CCC,both,True
+Formic acid,CH2O2,O=CO,film,False
+Formamide,CH3NO,N=CO,film,False
+"Hydroxylamine, O-methyl-",CH5NO,CON,film,False
+Carbon dioxide,CO2,O=C=O,both,True
+Glyoxal,C2H2O2,O=CC=O,film,False
+Acetyl iodide,C2H3IO,CC(=O)I,film,False
+Acetic acid,C2H4O2,CC(=O)O,film,False
+Methyl formate,C2H4O2,COC=O,film,False
+"Acetaldehyde, hydroxy-",C2H4O2,O=CCO,film,False
+Acetamide,C2H5NO,CC(=N)O,film,False
+"1,2-Ethanediol",C2H6O2,OCCO,film,False
+"Peroxide, dimethyl",C2H6O2,COOC,film,False
+Monoethanolamine,C2H7NO,NCCO,film,False
+2-Propenal,C3H4O,C=CC=O,film,False
+Propanal,C3H6O,CCC=O,film,False
+Acetone,C3H6O,CC(C)=O,film,True
+"Ethene, methoxy-",C3H6O,C=COC,film,False
+"Propane, 2-iodo-",C3H7I,CC(C)I,film,False
+Isopropyl Alcohol,C3H8O,CC(C)O,film,False
+"Ethane, methoxy-",C3H8O,CCOC,film,False
+1-Propanol,C3H8O,CCCO,film,False
+Propylamine,C3H9N,CCCN,film,False
+2-Propanamine,C3H9N,CC(C)N,film,False
+Isobutane,C4H10,CC(C)C,both,True
+Butane,C4H10,CCCC,both,True
+"1-Propene, 2-methyl-",C4H8,C=C(C)C,film,True
+2-Butene,C4H8,CC=CC,film,False
+"Acetic acid, oxo-",C2H2O3,O=CC(=O)O,film,False
+"Acetic acid, iodo-",C2H3IO2,O=C(O)CI,film,False
+"Acetic acid, hydroxy-",C2H4O3,O=C(O)CO,film,False
+Glycine,C2H5NO2,NCC(=O)O,film,False
+"Carbamic acid, methyl ester",C2H5NO2,COC(=N)O,film,False
+2-Propenoic acid,C3H4O2,C=CC(=O)O,film,True
+"Formic acid, ethenyl ester",C3H4O2,C=COC=O,film,False
+Methyl glyoxal,C3H4O2,CC(=O)C=O,film,False
+Propanoic acid,C3H6O2,CCC(=O)O,film,False
+Ethyl formate,C3H6O2,CCOC=O,film,False
+"Acetic acid, methyl ester",C3H6O2,COC(C)=O,film,False
+"2-Propanone, 1-hydroxy-",C3H6O2,CC(=O)CO,film,False
+"Acetaldehyde, methoxy-",C3H6O2,COCC=O,film,False
+Propanamide,C3H7NO,CCC(=N)O,film,False
+"Hydroperoxide, 1-methylethyl",C3H8O2,CC(C)OO,film,False
+Propylene Glycol,C3H8O2,CC(O)CO,film,False
+"2-Propanol, 1-amino-",C3H9NO,CC(O)CN,film,False
+"1-Propanol, 3-amino-",C3H9NO,NCCCO,film,False
+"Ethanamine, 2-methoxy-",C3H9NO,COCCN,film,False
+"2-Propanol, 2-methyl-",C4H10O,CC(C)(C)O,film,True
+"Propane, 2-methoxy-",C4H10O,COC(C)C,film,False
+2-Butanol,C4H10O,CCC(C)O,film,False
+Ethyl ether,C4H10O,CCOCC,film,False
+"1-Propanol, 2-methyl-",C4H10O,CC(C)CO,film,False
+"2-Propanamine, 2-methyl-",C4H11N,CC(C)(C)N,film,False
+1-Butanamine,C4H11N,CCCCN,film,False
+Isobutylamine,C4H11N,CC(C)CN,film,False
+Dimethylketene,C4H6O,CC(C)=C=O,film,False
+Vinyl ether,C4H6O,C=COC=C,film,False
+"Ethene, ethoxy-",C4H8O,C=COCC,film,False
+Butanal,C4H8O,CCCC=O,film,False
+2-Butanone,C4H8O,CCC(C)=O,film,False
+"Propanal, 2-methyl-",C4H8O,CC(C)C=O,film,False
+"1-Propene, 2-methoxy-",C4H8O,C=C(C)OC,film,False
+tert-Butyl iodide,C4H9I,CC(C)(C)I,film,True
+Oxalic acid,C2H2O4,O=C(O)C(=O)O,film,False
+"Acetic acid, oxo-, methyl ester",C3H4O3,COC(=O)C=O,film,False
+"Propanoic acid, 2-oxo-",C3H4O3,CC(=O)C(=O)O,film,False
+"Propanoic acid, 3-iodo-",C3H5IO2,O=C(O)CCI,film,False
+"Acetic acid, hydroxy-, methyl ester",C3H6O3,COC(=O)CO,film,False
+Lactic acid,C3H6O3,CC(O)C(=O)O,film,False
+"Acetic acid, methoxy-",C3H6O3,COCC(=O)O,film,False
+"1,2-Ethanediol, monoformate",C3H6O3,O=COCCO,film,False
+"Carbonic acid, dimethyl ester",C3H6O3,COC(=O)OC,film,False
+β-Alanine,C3H7NO2,NCCC(=O)O,film,False
+Urethane,C3H7NO2,CCOC(=N)O,film,False
+"Glycine, methyl ester",C3H7NO2,COC(=O)CN,film,False
+tert-Butyl Hydroperoxide,C4H10O2,CC(C)(C)OO,film,False
+"2,3-Butanediol",C4H10O2,CC(O)C(C)O,film,False
+"Peroxide, diethyl",C4H10O2,CCOOCC,film,False
+2-Ethoxyethylamine,C4H11NO,CCOCCN,film,False
+"1-Propen-2-ol, formate",C4H6O2,C=C(C)OC=O,film,False
+Acetic acid ethenyl ester,C4H6O2,C=COC(C)=O,film,False
+"2-Propenoic acid, methyl ester",C4H6O2,C=CC(=O)OC,film,False
+"2,3-Butanedione",C4H6O2,CC(=O)C(C)=O,film,False
+"Formic acid, 1-methylethyl ester",C4H8O2,CC(C)OC=O,film,False
+Ethyl Acetate,C4H8O2,CCOC(C)=O,film,False
+Methyl propionate,C4H8O2,CCC(=O)OC,film,False
+Butanoic acid,C4H8O2,CCCC(=O)O,film,False
+"Formic acid, propyl ester",C4H8O2,CCCOC=O,film,False
+"Butanal, 3-hydroxy-",C4H8O2,CC(O)CC=O,film,False
+Acetoin,C4H8O2,CC(=O)C(C)O,film,False
+"Propanoic acid, 2-methyl-",C4H8O2,CC(C)C(=O)O,film,False
+1-Hydroxy-2-butanone,C4H8O2,CCC(=O)CO,film,False
+"Propanal, 3-methoxy-",C4H8O2,COCCC=O,film,False
+"Propane, 2-(ethenyloxy)-",C5H10O,C=COC(C)C,film,False
+Propanedioic acid,C3H4O4,O=C(O)CC(=O)O,film,False
+Acetic anhydride,C4H6O3,CC(=O)OC(C)=O,film,False
+"Propanoic acid, 2-oxo-, methyl ester",C4H6O3,COC(=O)C(C)=O,film,False
+"Butanoic acid, 2-oxo-",C4H6O3,CCC(=O)C(=O)O,film,False
+Ethyl iodoacetate,C4H7IO2,CCOC(=O)CI,film,False
+"Propanoic acid, 3-hydroxy-, methyl ester",C4H8O3,COC(=O)CCO,film,False
+"Acetic acid, hydroxy-, ethyl ester",C4H8O3,CCOC(=O)CO,film,False
+"Propanoic acid, 2-hydroxy-2-methyl-",C4H8O3,CC(C)(O)C(=O)O,film,False
+"Butanoic acid, 3-hydroxy-",C4H8O3,CC(O)CC(=O)O,film,False
+"Acetic acid, ethoxy-",C4H8O3,CCOCC(=O)O,film,False
+"Butanoic acid, 4-hydroxy-",C4H8O3,O=C(O)CCCO,film,False
+"1,2-Ethanediol, monoacetate",C4H8O3,CC(=O)OCCO,film,False
+"Propanoic acid, 2-hydroxy-, methyl ester, (.+/-.)-",C4H8O3,COC(=O)C(C)O,film,False
+"Carbonic acid, ethyl-, methyl ester",C4H8O3,CCOC(=O)OC,film,False
+"Acetic acid, methoxy-, methyl ester",C4H8O3,COCC(=O)OC,film,False
+"Carbamic acid, 1-methylethyl ester",C4H9NO2,CC(C)OC(=N)O,film,False
+"Glycine, ethyl ester",C4H9NO2,CCOC(=O)CN,film,False
+4-Aminobutanoic acid,C4H9NO2,NCCCC(=O)O,film,False
+Isopropyl acetate,C5H10O2,CC(=O)OC(C)C,film,False
+"Formic acid, 1,1-dimethylethyl ester",C5H10O2,CC(C)(C)OC=O,film,False
+"Propanoic acid, ethyl ester",C5H10O2,CCOC(=O)CC,film,False
+"2-Propenoic acid, ethenyl ester",C5H6O2,C=COC(=O)C=C,film,False
+"1-Propen-2-ol, acetate",C5H8O2,C=C(C)OC(C)=O,film,False
+"2-Propenoic acid, ethyl ester",C5H8O2,C=CC(=O)OCC,film,False
+"Propanoic acid, ethenyl ester",C5H8O2,C=COC(=O)CC,film,False
+Butanedioic acid,C4H6O4,O=C(O)CCC(=O)O,film,False
+"Acetic acid, (acetyloxy)-",C4H6O4,CC(=O)OCC(=O)O,film,False
+"1,2-Ethanediol, diformate",C4H6O4,O=COCCOC=O,film,False
+"Ethanedioic acid, dimethyl ester",C4H6O4,COC(=O)C(=O)OC,film,False
+Isopropyl acrylate,C6H10O2,C=CC(=O)OC(C)C,film,False
+"Propanoic acid, 1-methylethyl ester",C6H12O2,CCC(=O)OC(C)C,film,False
+"Acetic acid, 1,1-dimethylethyl ester",C6H12O2,CC(=O)OC(C)(C)C,film,False
+Carbon monoxide,CO,[C-]#[O+],environment,True
+Nitrogen,N2,N#N,environment,True
+Argon,Ar,[Ar],environment,True
+1-Butene,C4H8,C=CCC,environment,True
+n-Hexane,C6H14,CCCCCC,environment,True
+Acetylene,C2H2,C#C,environment,True
