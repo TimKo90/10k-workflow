@@ -17,13 +17,14 @@ pip install -r requirements.txt
 python scripts/plot_figure_03.py
 ```
 
-| Figure | Script                        | Output                    | Needs                     |
-|--------|-------------------------------|---------------------------|---------------------------|
-| 2C     | `plot_processing_timeline.py` | `figure_2c.svg`           | Python standard library   |
-| 3      | `plot_figure_03.py`           | `figure_03.{svg,pdf,png}` | `requirements.txt`, Arial |
-| 4      | `plot_figure_04.py`           | `figure_04.{svg,pdf,png}` | `requirements.txt`, Arial |
+| Figure        | Script                        | Output                                           | Needs                     |
+|---------------|-------------------------------|--------------------------------------------------|---------------------------|
+| 2C            | `plot_processing_timeline.py` | `figure_2c.svg`                                  | Python standard library   |
+| 3             | `plot_figure_03.py`           | `figure_03.{svg,pdf,png}`                        | `requirements.txt`, Arial |
+| 4             | `plot_figure_04.py`           | `figure_04.{svg,pdf,png}`                        | `requirements.txt`, Arial |
+| S14, Table S1 | `plot_figure_s14.py`          | `figure_s14.{svg,pdf,png}`, `table_s1.{csv,tex}` | `requirements.txt`, Arial |
 
-Figures 3 and 4 raise an error if Arial is not installed rather than substituting a font with different metrics. The scripts plot precomputed values; the upstream analyses (UMAP and clustering, RGA fits) are not rerun.
+Figures 3, 4 and S14 raise an error if Arial is not installed rather than substituting a font with different metrics. Figures 3 and 4 plot precomputed values (UMAP and clustering, RGA fits); Figure S14 recomputes the peak positions, cosine similarities and Table S1 summary statistics from the reduced 1D spectra and diffraction profiles.
 
 ## Figure 2C: processing timeline
 
@@ -69,6 +70,23 @@ Data:
 - `fig04_rga_runs.csv`: one row per film with `run_id`, `tf`, `batch` (RGA session), `metal`, `mixing_ratio`, `substrate`, `anneal_c` (annealing set temperature, °C), `outgas_area_torr_s` (background-corrected total pressure integrated over the exposure), `misfit_all` (Σ|observed - fit| / Σ observed over m/z 2-300 with the reviewed library) and `panel_d` (shown in panel D; the lowest-misfit run per condition, currently all 36).
 - `fig04_rga_fit_before_review.csv`, `fig04_rga_fit_after_review.csv`: observed spectrum (`observed`, Torr) and the contribution of each fitted compound at each integer m/z from 2 to 300, for the representative film.
 - `fig04_rga_partial_pressures.csv`: partial pressure (Torr) of each of the 26 reviewed compounds per film, from the fit weights scaled by the ionization cross section relative to N₂.
+
+## Figure S14 and Table S1: multimodal reproducibility benchmark
+
+Benchmark of automated high-throughput (HT) films annealed at 100 or 120 °C across three representative bismuth-iodide compositions — (PEAOH)BiI₄ (1:1, X/M = 4.0), (β-Ala-H)₂BiI₅ (2:1, X/M = 5.0) and (β-Ala-tBu)₃Bi₂I₉ (3:2, X/M = 4.5) — against manually prepared reference films (McCarthy et al., 2026), simulated single-crystal X-ray diffraction (SCXRD) powder patterns and manually prepared DMF control films (41 cohort films out of 82 with recorded annealing temperatures across all temperatures; 39 valid as-cast UV-vis scans, 17 unflagged GIWAXS patterns across 12 films and 7 primary 150 s EUV-RGA runs).
+
+- **A**: normalized UV-vis excitonic absorption spectra comparing the HT cohort mean ± 1σ (cast from DMF) against reference films (cast from each cation's optimized solvent) and DMF control films, with excitonic peak wavelengths (λ_exc) and 400–650 nm spectral cosine similarities (cos θ).
+- **B**: normalized 1D diffraction profiles comparing HT GIWAXS on ITO, reference GIWAXS on Si, reference powder XRD (Co Kα₁) and simulated SCXRD powder curves on a common 0.005 Å⁻¹ grid, with parabolic-refined HT reflection guides.
+- **C**: normalized background-subtracted EUV-RGA mass spectra (m/z = 12–145 excluding H₂O at 18 and O₂ at 32) comparing HT and reference exposures, annotated with major radiolytic fragments and 20-ion diagnostic cosine similarities.
+
+In addition to `figure_s14.{svg,pdf,png}` and `table_s1.{csv,tex}`, `plot_figure_s14.py` writes `figs14_peaks_all.csv`, `figs14_sensitivity.csv` and `figs14_text_values.csv` to `figures/`.
+
+Data:
+
+- `figs14_cohort_films.csv`: film metadata and inclusion flags for the 83 target-stoichiometry BiI₃ HT films (82 with recorded annealing temperatures plus early bare-glass commissioning film TF000004).
+- `figs14_uvvis_spectra.csv`, `figs14_uvvis_scans.csv`: smoothed, NIR-baseline-subtracted absorbance spectra on a 1 nm grid (350–800 nm) for the cohort HT scans, reference films and DMF controls, together with per-film scan metadata, peak positions, cosine similarities and spatial-aggregation sensitivity columns.
+- `figs14_diffraction_profiles.csv`, `figs14_scxrd_simulated_peaks.csv`: 1D radial profiles on a 0.005 Å⁻¹ grid (0.0025–2.9975 Å⁻¹) for all 17 individual HT GIWAXS scans, HT cohort means/SDs, reference GIWAXS, reference powder XRD and simulated SCXRD powder patterns, plus precomputed simulated Bragg positions and relative intensities for the cited low-q reflections.
+- `figs14_rga_spectra.csv`, `figs14_rga_runs.csv`: background-subtracted partial pressures (Torr) at integer m/z = 1–300 and run-level metadata for the 3 reference runs, the 15 primary 150 s HT BiI₃ runs (7 at 100 or 120 °C) and 4 excluded 300 s commissioning runs.
 
 ## License
 

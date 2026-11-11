@@ -1,0 +1,84 @@
+mfid,composition,formula,am_ratio,xm_ratio,casting_solvent,anneal_c,temperature_source_field,deposition_date,substrate,pmma_coated,has_uvvis_primary_as_cast,n_giwaxs_preferred_unflagged,n_rga_primary_150s,included,exclusion_reason
+TF000004,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,,excluded_no_setpoint_commissioning_bare_glass,2025-12-09,Sciprios-Glass,n,n,4,0,n,"no_setpoint_recorded (heater_sv_temp=null, annealing_temp_c=null; bare-glass GIWAXS commissioning film, BiI3-only diffraction pattern, no UV-vis)"
+TF000012,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,140.0,heater_pv_temp_dec2025_fallback (heater_sv_temp and annealing_temp_c both null),2025-12-09,Sciprios-Glass,n,n,4,0,n,temperature_outside_100_120C (140.0 C)
+TF000020,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,100.0,heater_pv_temp_dec2025_fallback (heater_sv_temp and annealing_temp_c both null),2025-12-10,Sciprios-Glass,n,y,0,0,y,included_in_100_120C_cohort
+TF000028,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,140.0,heater_pv_temp_dec2025_fallback (heater_sv_temp and annealing_temp_c both null),2025-12-10,Sciprios-Glass,n,y,0,0,n,temperature_outside_100_120C (140.0 C)
+TF000036,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,100.0,heater_pv_temp_dec2025_fallback (heater_sv_temp and annealing_temp_c both null),2025-12-17,Sciprios-Glass,n,y,0,0,y,included_in_100_120C_cohort
+TF000044,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,100.0,heater_pv_temp_dec2025_fallback (heater_sv_temp and annealing_temp_c both null),2025-12-17,Sciprios-Glass,n,y,0,0,y,included_in_100_120C_cohort
+TF000054,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,100.0,heater_pv_temp_dec2025_fallback (heater_sv_temp and annealing_temp_c both null),2025-12-17,Sciprios-Glass,n,y,0,0,y,included_in_100_120C_cohort
+TF000068,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,140.0,heater_pv_temp_dec2025_fallback (heater_sv_temp and annealing_temp_c both null),2025-12-17,Sciprios-Glass,n,y,0,0,n,temperature_outside_100_120C (140.0 C)
+TF000078,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,140.0,heater_pv_temp_dec2025_fallback (heater_sv_temp and annealing_temp_c both null),2025-12-17,Sciprios-Glass,n,y,0,0,n,temperature_outside_100_120C (140.0 C)
+TF000092,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,100.0,heater_pv_temp_dec2025_fallback (heater_sv_temp and annealing_temp_c both null),2025-12-18,Sciprios-Glass,n,y,0,0,y,included_in_100_120C_cohort
+TF000100,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,100.0,heater_pv_temp_dec2025_fallback (heater_sv_temp and annealing_temp_c both null),2025-12-18,Sciprios-Glass,n,y,0,0,y,included_in_100_120C_cohort
+TF000110,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,100.0,heater_pv_temp_dec2025_fallback (heater_sv_temp and annealing_temp_c both null),2025-12-18,Sciprios-Glass,n,y,0,0,y,included_in_100_120C_cohort
+TF000118,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,140.0,heater_pv_temp_dec2025_fallback (heater_sv_temp and annealing_temp_c both null),2025-12-18,Sciprios-Glass,n,y,0,0,n,temperature_outside_100_120C (140.0 C)
+TF000140,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,100.0,heater_sv_temp,2026-01-08,Sehun-ITO,n,y,0,0,y,included_in_100_120C_cohort
+TF000150,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,100.0,heater_sv_temp,2026-01-08,Sehun-ITO,n,y,0,0,y,included_in_100_120C_cohort
+TF000158,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,100.0,heater_sv_temp,2026-01-08,Sehun-ITO,n,y,0,0,y,included_in_100_120C_cohort
+TF000172,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,100.0,heater_sv_temp,2026-01-08,Sehun-ITO,n,y,0,0,y,included_in_100_120C_cohort
+TF000180,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,100.0,heater_sv_temp,2026-01-08,Sehun-ITO,n,y,0,0,y,included_in_100_120C_cohort
+TF000188,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,100.0,heater_sv_temp,2026-01-08,Sehun-ITO,n,y,0,0,y,included_in_100_120C_cohort
+TF000196,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,100.0,heater_sv_temp,2026-01-08,Sehun-ITO,n,y,0,0,y,included_in_100_120C_cohort
+TF000204,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,100.0,heater_sv_temp,2026-01-08,Sehun-ITO,n,y,0,0,y,included_in_100_120C_cohort
+TF000214,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,100.0,heater_sv_temp,2026-01-08,Sehun-ITO,n,y,0,0,y,included_in_100_120C_cohort
+TF000222,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,100.0,heater_sv_temp,2026-01-08,Sehun-ITO,n,y,0,0,y,included_in_100_120C_cohort
+TF000230,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,100.0,heater_sv_temp,2026-01-08,Sehun-ITO,n,y,0,0,y,included_in_100_120C_cohort
+TF000238,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,100.0,heater_sv_temp,2026-01-08,Sehun-ITO,n,y,0,0,y,included_in_100_120C_cohort
+TF000285,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,80.0,heater_sv_temp,2026-01-08,Sehun-ITO,y,y,0,0,n,temperature_outside_100_120C (80.0 C)
+TF000286,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,120.0,heater_sv_temp,2026-01-08,Sehun-ITO,y,y,0,0,y,included_in_100_120C_cohort
+TF000287,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,140.0,heater_sv_temp,2026-01-08,Sehun-ITO,y,y,0,0,n,temperature_outside_100_120C (140.0 C)
+TF000288,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,160.0,heater_sv_temp,2026-01-08,Sehun-ITO,y,y,0,0,n,temperature_outside_100_120C (160.0 C)
+TF000325,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,80.0,heater_sv_temp,2026-01-08,Sehun-ITO,y,y,1,0,n,temperature_outside_100_120C (80.0 C)
+TF000326,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,120.0,heater_sv_temp,2026-01-08,Sehun-ITO,y,y,1,0,y,included_in_100_120C_cohort
+TF000327,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,140.0,heater_sv_temp,2026-01-08,Sehun-ITO,y,y,1,0,n,temperature_outside_100_120C (140.0 C)
+TF000328,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,160.0,heater_sv_temp,2026-01-08,Sehun-ITO,y,y,0,0,n,temperature_outside_100_120C (160.0 C)
+TF001005,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,140.0,heater_sv_temp,2026-01-12,Sehun-ITO,y,y,0,0,n,temperature_outside_100_120C (140.0 C)
+TF001006,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,120.0,heater_sv_temp,2026-01-12,Sehun-ITO,y,y,0,0,y,included_in_100_120C_cohort
+TF001007,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,100.0,heater_sv_temp,2026-01-12,Sehun-ITO,y,y,0,0,y,included_in_100_120C_cohort
+TF001008,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,80.0,heater_sv_temp,2026-01-12,Sehun-ITO,y,y,0,0,n,temperature_outside_100_120C (80.0 C)
+TF001028,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,160.0,heater_sv_temp,2026-01-12,Sehun-ITO,y,y,1,0,n,temperature_outside_100_120C (160.0 C)
+TF001102,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,160.0,heater_sv_temp,2026-01-12,Sehun-ITO,y,y,1,0,n,temperature_outside_100_120C (160.0 C)
+TF001125,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,140.0,heater_sv_temp,2026-01-12,Sehun-ITO,y,y,1,0,n,temperature_outside_100_120C (140.0 C)
+TF001126,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,120.0,heater_sv_temp,2026-01-12,Sehun-ITO,y,y,1,0,y,included_in_100_120C_cohort
+TF001127,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,100.0,heater_sv_temp,2026-01-12,Sehun-ITO,y,y,1,0,y,included_in_100_120C_cohort
+TF001128,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,80.0,heater_sv_temp,2026-01-12,Sehun-ITO,y,y,1,0,n,temperature_outside_100_120C (80.0 C)
+TF001780,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,160.0,heater_sv_temp,2026-01-28,Sciprios-ITO,y,y,2,0,n,temperature_outside_100_120C (160.0 C)
+TF001783,beta-Ala-tBu,(beta-Ala-tBu)3Bi2I9,3:2,4.5,DMF,160.0,heater_sv_temp,2026-01-28,Sciprios-ITO,y,y,1,0,n,temperature_outside_100_120C (160.0 C)
+TF001788,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,160.0,heater_sv_temp,2026-01-28,Sciprios-ITO,y,y,0,0,n,temperature_outside_100_120C (160.0 C)
+TF001791,beta-Ala-tBu,(beta-Ala-tBu)3Bi2I9,3:2,4.5,DMF,160.0,heater_sv_temp,2026-01-28,Sciprios-ITO,y,y,0,0,n,temperature_outside_100_120C (160.0 C)
+TF001805,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,80.0,heater_sv_temp,2026-01-28,Sciprios-ITO,n,y,0,0,n,temperature_outside_100_120C (80.0 C)
+TF001806,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,100.0,heater_sv_temp,2026-01-28,Sciprios-ITO,n,y,0,0,y,included_in_100_120C_cohort
+TF001807,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,140.0,heater_sv_temp,2026-01-28,Sciprios-ITO,n,y,0,1,n,temperature_outside_100_120C (140.0 C)
+TF001808,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,120.0,heater_sv_temp,2026-01-28,Sciprios-ITO,n,y,0,1,y,included_in_100_120C_cohort
+TF001817,beta-Ala-tBu,(beta-Ala-tBu)3Bi2I9,3:2,4.5,DMF,80.0,heater_sv_temp,2026-01-28,Sciprios-ITO,n,y,0,1,n,temperature_outside_100_120C (80.0 C)
+TF001818,beta-Ala-tBu,(beta-Ala-tBu)3Bi2I9,3:2,4.5,DMF,100.0,heater_sv_temp,2026-01-28,Sciprios-ITO,n,y,0,1,y,included_in_100_120C_cohort
+TF001819,beta-Ala-tBu,(beta-Ala-tBu)3Bi2I9,3:2,4.5,DMF,140.0,heater_sv_temp,2026-01-28,Sciprios-ITO,n,y,0,1,n,temperature_outside_100_120C (140.0 C)
+TF001820,beta-Ala-tBu,(beta-Ala-tBu)3Bi2I9,3:2,4.5,DMF,120.0,heater_sv_temp,2026-01-28,Sciprios-ITO,n,y,0,1,y,included_in_100_120C_cohort
+TF001837,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,80.0,heater_sv_temp,2026-01-28,Sciprios-ITO,y,y,0,0,n,temperature_outside_100_120C (80.0 C)
+TF001838,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,100.0,heater_sv_temp,2026-01-28,Sciprios-ITO,y,y,2,0,y,included_in_100_120C_cohort
+TF001839,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,140.0,heater_sv_temp,2026-01-28,Sciprios-ITO,y,y,2,0,n,temperature_outside_100_120C (140.0 C)
+TF001840,PEAOH,(PEAOH)BiI4,1:1,4.0,DMF,120.0,heater_sv_temp,2026-01-28,Sciprios-ITO,y,y,2,0,y,included_in_100_120C_cohort
+TF001849,beta-Ala-tBu,(beta-Ala-tBu)3Bi2I9,3:2,4.5,DMF,80.0,heater_sv_temp,2026-01-28,Sciprios-ITO,y,y,0,0,n,temperature_outside_100_120C (80.0 C)
+TF001850,beta-Ala-tBu,(beta-Ala-tBu)3Bi2I9,3:2,4.5,DMF,100.0,heater_sv_temp,2026-01-28,Sciprios-ITO,y,y,2,0,y,included_in_100_120C_cohort
+TF001851,beta-Ala-tBu,(beta-Ala-tBu)3Bi2I9,3:2,4.5,DMF,140.0,heater_sv_temp,2026-01-28,Sciprios-ITO,y,y,2,0,n,temperature_outside_100_120C (140.0 C)
+TF001852,beta-Ala-tBu,(beta-Ala-tBu)3Bi2I9,3:2,4.5,DMF,120.0,heater_sv_temp,2026-01-28,Sciprios-ITO,y,y,2,0,y,included_in_100_120C_cohort
+TF001862,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,160.0,heater_sv_temp,2026-01-28,Sciprios-ITO,y,y,2,0,n,temperature_outside_100_120C (160.0 C)
+TF001870,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,160.0,heater_sv_temp,2026-01-28,Sciprios-ITO,y,y,0,1,n,temperature_outside_100_120C (160.0 C)
+TF001893,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,80.0,heater_sv_temp,2026-01-28,Sciprios-ITO,y,y,2,0,n,temperature_outside_100_120C (80.0 C)
+TF001894,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,100.0,heater_sv_temp,2026-01-28,Sciprios-ITO,y,y,2,0,y,included_in_100_120C_cohort
+TF001895,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,140.0,heater_sv_temp,2026-01-28,Sciprios-ITO,y,y,0,0,n,temperature_outside_100_120C (140.0 C)
+TF001896,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,120.0,heater_sv_temp,2026-01-28,Sciprios-ITO,y,y,0,0,y,included_in_100_120C_cohort
+TF002093,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,80.0,heater_sv_temp,2026-02-12,DK-ITO,n,y,0,1,n,temperature_outside_100_120C (80.0 C)
+TF002094,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,100.0,heater_sv_temp,2026-02-12,DK-ITO,n,y,0,1,y,included_in_100_120C_cohort
+TF002095,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,140.0,heater_sv_temp,2026-02-12,DK-ITO,n,y,0,1,n,temperature_outside_100_120C (140.0 C)
+TF002096,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,120.0,heater_sv_temp,2026-02-12,DK-ITO,n,y,0,1,y,included_in_100_120C_cohort
+TF004965,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,80.0,heater_sv_temp,2026-05-15,Sciprios-ITO,n,y,1,1,n,temperature_outside_100_120C (80.0 C)
+TF004966,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,100.0,heater_sv_temp,2026-05-15,Sciprios-ITO,n,y,1,1,y,included_in_100_120C_cohort
+TF004967,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,140.0,heater_sv_temp,2026-05-15,Sciprios-ITO,n,y,1,1,n,temperature_outside_100_120C (140.0 C)
+TF004968,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,120.0,heater_sv_temp,2026-05-15,Sciprios-ITO,n,y,1,1,y,included_in_100_120C_cohort
+TF004997,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,80.0,heater_sv_temp,2026-05-15,Sciprios-ITO,y,y,1,0,n,temperature_outside_100_120C (80.0 C)
+TF004998,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,100.0,heater_sv_temp,2026-05-15,Sciprios-ITO,y,y,1,0,y,included_in_100_120C_cohort
+TF004999,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,140.0,heater_sv_temp,2026-05-15,Sciprios-ITO,y,y,1,0,n,temperature_outside_100_120C (140.0 C)
+TF005000,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,120.0,heater_sv_temp,2026-05-15,Sciprios-ITO,y,y,1,0,y,included_in_100_120C_cohort
+TF005014,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,160.0,heater_sv_temp,2026-05-18,Sciprios-ITO,y,y,1,0,n,temperature_outside_100_120C (160.0 C)
+TF005022,beta-Ala-H,(beta-Ala-H)2BiI5,2:1,5.0,DMF,160.0,heater_sv_temp,2026-05-18,Sciprios-ITO,n,y,1,0,n,temperature_outside_100_120C (160.0 C)
