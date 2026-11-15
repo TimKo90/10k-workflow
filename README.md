@@ -21,10 +21,11 @@ python scripts/plot_figure_03.py
 |---------------|-------------------------------|--------------------------------------------------|---------------------------|
 | 2C            | `plot_processing_timeline.py` | `figure_2c.svg`                                  | Python standard library   |
 | 3             | `plot_figure_03.py`           | `figure_03.{svg,pdf,png}`                        | `requirements.txt`, Arial |
+| 4             | `plot_figure_04.py`           | `figure_04.{svg,pdf,png}`                        | `requirements.txt`, Arial, Courier New |
 | 5             | `plot_figure_05.py`           | `figure_05.{svg,pdf,png}`                        | `requirements.txt`, Arial |
 | S14, Table S1 | `plot_figure_s14.py`          | `figure_s14.{svg,pdf,png}`, `table_s1.{csv,tex}` | `requirements.txt`, Arial |
 
-Figures 3, 4 and S14 raise an error if Arial is not installed rather than substituting a font with different metrics. Figures 3 and 4 plot precomputed values (UMAP and clustering, RGA fits); Figure S14 recomputes the peak positions, cosine similarities and Table S1 summary statistics from the reduced 1D spectra and diffraction profiles.
+Figures 3, 4, 5 and S14 raise an error if Arial (and, for Figure 4, Courier New) is not installed rather than substituting a font with different metrics. Figures 3, 4 and 5 plot precomputed values (UMAP and clustering, reduced GIWAXS data and labels, RGA fits); Figure S14 recomputes the peak positions, cosine similarities and Table S1 summary statistics from the reduced 1D spectra and diffraction profiles.
 
 ## Figure 2C: processing timeline
 
@@ -54,6 +55,21 @@ Data:
 - `image_inhomogeneity_by_film.csv`: `ThinFilmID`, `delta_e_2000_median`, `qc_valid` for the 5,967 imaged films.
 - `uvvis_inhomogeneity_by_film.csv`: `ThinFilmID`, `uvvis_robust_spectral_inhomogeneity` for the 5,989 films with UV-Vis.
 - `umap_clusters_by_film.csv`: `ThinFilmID`, UMAP coordinates (`umap_10spot_eq77_1/2`), clusters (`cluster_k9_raw`, `cluster_k9_assigned`) and the four descriptors of panel C. The 77 input features of the embedding are not included.
+
+## Figure 4: GIWAXS pipeline and labels
+
+- **A**: raw detector image of TF001028 (film 1, the homogeneous exemplar of Figure 3; incidence angle 1.0°, 5 s), its q-space map after reduction with pygid, and the split of all 3,414 labeled films into crystalline and amorphous.
+- **B**: the two classes on the UMAP of Figure 3C (the 3,267 labeled films that also have UV-Vis and image data), with q-space maps of six example films from the Figure S14 benchmark set on the colour scale of the q-space map in A.
+
+Data:
+
+- `fig04_pipeline_TF001028.npz`: raw detector frame of TF001028 as recorded (counts per pixel; module-gap pixels are negative), the detector mask, the reduced q-space map with its q axes, wavelength, sample-detector distance, beam center (in raw-image pixels), film ID and class.
+- `fig04_example_qmaps.npz`: q-space maps of the six example films (TF000325, TF000327, TF004966, TF001126, TF001838, TF001894), 2×2 binned, each with its own q axes, plus their IDs and classes.
+- `giwaxs_class_by_film.csv`: `ThinFilmID`, `giwaxs_class` (`Crystalline` or `Amorphous`) for the 3,414 labeled films, one label per film. The labels from MLExchange are summarized as crystalline and amorphous, with mostly amorphous films counted as amorphous.
+- `umap_clusters_by_film.csv`: shared with Figure 3.
+- `logos/mlexchange_logo.png`: crop of `docs/docs/figures/mlex.png` in https://github.com/mlexchange/mlex (BSD-3-Clause-style licence, Copyright (c) 2021, The Regents of the University of California, through Lawrence Berkeley National Laboratory).
+
+Of the GIWAXS data, the repository contains only the scans shown in the figure; the other scans of the campaign are not included.
 
 ## Figure 5: RGA library review and quantification
 
