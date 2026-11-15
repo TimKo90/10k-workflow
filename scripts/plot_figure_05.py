@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Figure 4: RGA analysis of beta-alanine tert-butyl ester hydroiodide films
+"""Figure 5: RGA analysis of beta-alanine tert-butyl ester hydroiodide films
 with rgakit (candidate generation, NIST matching, human review, quantification).
 
-Input: data/fig04_rga_summary.json, data/fig04_rga_library.csv,
-data/fig04_rga_runs.csv, data/fig04_rga_fit_before_review.csv,
-data/fig04_rga_fit_after_review.csv, data/fig04_rga_partial_pressures.csv.
-Output: figures/figure_04.{svg,pdf,png}.
+Input: data/fig05_rga_summary.json, data/fig05_rga_library.csv,
+data/fig05_rga_runs.csv, data/fig05_rga_fit_before_review.csv,
+data/fig05_rga_fit_after_review.csv, data/fig05_rga_partial_pressures.csv.
+Output: figures/figure_05.{svg,pdf,png}.
 
 186 mm wide, Arial; SVG text stays editable.
 """
@@ -441,12 +441,12 @@ def label(fig, letter, y=1.0):
 
 
 def load_data():
-    summary = json.loads((DATA_DIR / "fig04_rga_summary.json").read_text())
-    library = pd.read_csv(DATA_DIR / "fig04_rga_library.csv")
-    runs = pd.read_csv(DATA_DIR / "fig04_rga_runs.csv")
-    film1 = pd.read_csv(DATA_DIR / "fig04_rga_fit_before_review.csv", index_col=0)
-    film2 = pd.read_csv(DATA_DIR / "fig04_rga_fit_after_review.csv", index_col=0)
-    pressures = pd.read_csv(DATA_DIR / "fig04_rga_partial_pressures.csv", index_col=0)
+    summary = json.loads((DATA_DIR / "fig05_rga_summary.json").read_text())
+    library = pd.read_csv(DATA_DIR / "fig05_rga_library.csv")
+    runs = pd.read_csv(DATA_DIR / "fig05_rga_runs.csv")
+    film1 = pd.read_csv(DATA_DIR / "fig05_rga_fit_before_review.csv", index_col=0)
+    film2 = pd.read_csv(DATA_DIR / "fig05_rga_fit_after_review.csv", index_col=0)
+    pressures = pd.read_csv(DATA_DIR / "fig05_rga_partial_pressures.csv", index_col=0)
     return summary, library, runs, film1, film2, pressures
 
 
@@ -483,11 +483,11 @@ def main():
     panels["d"](bot)
     label(bot, "d")
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    fig.savefig(OUTPUT_DIR / "figure_04.svg", dpi=RASTER_DPI, metadata={"Date": None})
-    fig.savefig(OUTPUT_DIR / "figure_04.pdf", dpi=RASTER_DPI, metadata={"CreationDate": None})
-    fig.savefig(OUTPUT_DIR / "figure_04.png", dpi=RASTER_DPI)
+    fig.savefig(OUTPUT_DIR / "figure_05.svg", dpi=RASTER_DPI, metadata={"Date": None})
+    fig.savefig(OUTPUT_DIR / "figure_05.pdf", dpi=RASTER_DPI, metadata={"CreationDate": None})
+    fig.savefig(OUTPUT_DIR / "figure_05.png", dpi=RASTER_DPI)
     plt.close(fig)
-    print(f"wrote {OUTPUT_DIR / 'figure_04'}.svg, .pdf and .png")
+    print(f"wrote {OUTPUT_DIR / 'figure_05'}.svg, .pdf and .png")
 
 
 if __name__ == "__main__":

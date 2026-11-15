@@ -21,7 +21,7 @@ python scripts/plot_figure_03.py
 |---------------|-------------------------------|--------------------------------------------------|---------------------------|
 | 2C            | `plot_processing_timeline.py` | `figure_2c.svg`                                  | Python standard library   |
 | 3             | `plot_figure_03.py`           | `figure_03.{svg,pdf,png}`                        | `requirements.txt`, Arial |
-| 4             | `plot_figure_04.py`           | `figure_04.{svg,pdf,png}`                        | `requirements.txt`, Arial |
+| 5             | `plot_figure_05.py`           | `figure_05.{svg,pdf,png}`                        | `requirements.txt`, Arial |
 | S14, Table S1 | `plot_figure_s14.py`          | `figure_s14.{svg,pdf,png}`, `table_s1.{csv,tex}` | `requirements.txt`, Arial |
 
 Figures 3, 4 and S14 raise an error if Arial is not installed rather than substituting a font with different metrics. Figures 3 and 4 plot precomputed values (UMAP and clustering, RGA fits); Figure S14 recomputes the peak positions, cosine similarities and Table S1 summary statistics from the reduced 1D spectra and diffraction profiles.
@@ -55,7 +55,7 @@ Data:
 - `uvvis_inhomogeneity_by_film.csv`: `ThinFilmID`, `uvvis_robust_spectral_inhomogeneity` for the 5,989 films with UV-Vis.
 - `umap_clusters_by_film.csv`: `ThinFilmID`, UMAP coordinates (`umap_10spot_eq77_1/2`), clusters (`cluster_k9_raw`, `cluster_k9_assigned`) and the four descriptors of panel C. The 77 input features of the embedding are not included.
 
-## Figure 4: RGA library review and quantification
+## Figure 5: RGA library review and quantification
 
 Residual gas analysis of the 36 films made from β-alanine tert-butyl ester hydroiodide (`CC(C)(C)OC(=O)CC[NH3+].[I-]`) with BiI₃ (16) or SbI₃ (20), one film per metal, organic:metal ratio and annealing temperature. Spectra were fitted by non-negative least squares against NIST reference spectra with [rgakit](https://github.com/roncofaber/rgakit).
 
@@ -65,11 +65,11 @@ Residual gas analysis of the 36 films made from β-alanine tert-butyl ester hydr
 
 Data:
 
-- `fig04_rga_summary.json`: the cation (SMILES and 2D depiction coordinates, so RDKit is not needed), the number of generated fragments and the representative run.
-- `fig04_rga_library.csv`: the 152 matched compounds with `compound` (NIST name), `formula`, `smiles`, `source` (`film` fragment only, `environment` only, or `both`) and `kept_after_review`.
-- `fig04_rga_runs.csv`: one row per film with `run_id`, `tf`, `batch` (RGA session), `metal`, `mixing_ratio`, `substrate`, `anneal_c` (annealing set temperature, °C), `outgas_area_torr_s` (background-corrected total pressure integrated over the exposure), `misfit_all` (Σ|observed - fit| / Σ observed over m/z 2-300 with the reviewed library) and `panel_d` (shown in panel D; the lowest-misfit run per condition, currently all 36).
-- `fig04_rga_fit_before_review.csv`, `fig04_rga_fit_after_review.csv`: observed spectrum (`observed`, Torr) and the contribution of each fitted compound at each integer m/z from 2 to 300, for the representative film.
-- `fig04_rga_partial_pressures.csv`: partial pressure (Torr) of each of the 26 reviewed compounds per film, from the fit weights scaled by the ionization cross section relative to N₂.
+- `fig05_rga_summary.json`: the cation (SMILES and 2D depiction coordinates, so RDKit is not needed), the number of generated fragments and the representative run.
+- `fig05_rga_library.csv`: the 152 matched compounds with `compound` (NIST name), `formula`, `smiles`, `source` (`film` fragment only, `environment` only, or `both`) and `kept_after_review`.
+- `fig05_rga_runs.csv`: one row per film with `run_id`, `tf`, `batch` (RGA session), `metal`, `mixing_ratio`, `substrate`, `anneal_c` (annealing set temperature, °C), `outgas_area_torr_s` (background-corrected total pressure integrated over the exposure), `misfit_all` (Σ|observed - fit| / Σ observed over m/z 2-300 with the reviewed library) and `panel_d` (shown in panel D; the lowest-misfit run per condition, currently all 36).
+- `fig05_rga_fit_before_review.csv`, `fig05_rga_fit_after_review.csv`: observed spectrum (`observed`, Torr) and the contribution of each fitted compound at each integer m/z from 2 to 300, for the representative film.
+- `fig05_rga_partial_pressures.csv`: partial pressure (Torr) of each of the 26 reviewed compounds per film, from the fit weights scaled by the ionization cross section relative to N₂.
 
 ## Figure S14 and Table S1: multimodal reproducibility benchmark
 
