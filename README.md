@@ -17,13 +17,13 @@ pip install -r requirements.txt
 python scripts/plot_figure_03.py
 ```
 
-| Figure        | Script                        | Output                                           | Needs                     |
-|---------------|-------------------------------|--------------------------------------------------|---------------------------|
-| 2C            | `plot_processing_timeline.py` | `figure_2c.svg`                                  | Python standard library   |
-| 3             | `plot_figure_03.py`           | `figure_03.{svg,pdf,png}`                        | `requirements.txt`, Arial |
+| Figure        | Script                        | Output                                           | Needs                                  |
+|---------------|-------------------------------|--------------------------------------------------|----------------------------------------|
+| 2C            | `plot_processing_timeline.py` | `figure_2c.svg`                                  | Python standard library                |
+| 3             | `plot_figure_03.py`           | `figure_03.{svg,pdf,png}`                        | `requirements.txt`, Arial              |
 | 4             | `plot_figure_04.py`           | `figure_04.{svg,pdf,png}`                        | `requirements.txt`, Arial, Courier New |
-| 5             | `plot_figure_05.py`           | `figure_05.{svg,pdf,png}`                        | `requirements.txt`, Arial |
-| S14, Table S1 | `plot_figure_s14.py`          | `figure_s14.{svg,pdf,png}`, `table_s1.{csv,tex}` | `requirements.txt`, Arial |
+| 5             | `plot_figure_05.py`           | `figure_05.{svg,pdf,png}`                        | `requirements.txt`, Arial              |
+| S14, Table S1 | `plot_figure_s14.py`          | `figure_s14.{svg,pdf,png}`, `table_s1.{csv,tex}` | `requirements.txt`, Arial              |
 
 Figures 3, 4, 5 and S14 raise an error if Arial (and, for Figure 4, Courier New) is not installed rather than substituting a font with different metrics. Figures 3, 4 and 5 plot precomputed values (UMAP and clustering, reduced GIWAXS data and labels, RGA fits); Figure S14 recomputes the peak positions, cosine similarities and Table S1 summary statistics from the reduced 1D spectra and diffraction profiles.
 
@@ -89,7 +89,7 @@ Data:
 
 ## Figure S14 and Table S1: multimodal reproducibility benchmark
 
-Benchmark of automated high-throughput (HT) films annealed at 100 or 120 °C across three representative bismuth-iodide compositions — (PEAOH)BiI₄ (1:1, X/M = 4.0), (β-Ala-H)₂BiI₅ (2:1, X/M = 5.0) and (β-Ala-tBu)₃Bi₂I₉ (3:2, X/M = 4.5) — against manually prepared reference films (McCarthy et al., 2026), simulated single-crystal X-ray diffraction (SCXRD) powder patterns and manually prepared DMF control films (41 cohort films out of 82 with recorded annealing temperatures across all temperatures; 39 valid as-cast UV-vis scans, 17 unflagged GIWAXS patterns across 12 films and 7 primary 150 s EUV-RGA runs).
+Benchmark of automated high-throughput (HT) films annealed at 100 or 120 °C across three representative bismuth-iodide compositions, (PEAOH)BiI₄ (1:1, X/M = 4.0), (β-Ala-H)₂BiI₅ (2:1, X/M = 5.0) and (β-Ala-tBu)₃Bi₂I₉ (3:2, X/M = 4.5), against manually prepared reference films (McCarthy et al., 2026), simulated single-crystal X-ray diffraction (SCXRD) powder patterns and manually prepared DMF control films (41 cohort films out of 82 with recorded annealing temperatures across all temperatures; 39 valid as-cast UV-vis scans, 17 unflagged GIWAXS patterns across 12 films and 7 primary 150 s EUV-RGA runs).
 
 - **A**: normalized UV-vis excitonic absorption spectra comparing the HT cohort mean ± 1σ (cast from DMF) against reference films (cast from each cation's optimized solvent) and DMF control films, with excitonic peak wavelengths (λ_exc) and 400–650 nm spectral cosine similarities (cos θ).
 - **B**: normalized 1D diffraction profiles comparing HT GIWAXS on ITO, reference GIWAXS on Si, reference powder XRD (Co Kα₁) and simulated SCXRD powder curves on a common 0.005 Å⁻¹ grid, with parabolic-refined HT reflection guides.
